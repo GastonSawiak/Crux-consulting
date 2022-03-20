@@ -19,7 +19,20 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
-
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 12.5px;
+}
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  background: #03588C;
+  transition: 450ms;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #049DBF;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -33,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #03588C;
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: all 0.4s;
 }
 
@@ -192,8 +205,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(3, 109, 133, 0.89);
-  transition: 0.3s;
+  background: rgba(3, 109, 133, 0.7);
+  transition: 350ms;
   z-index: 999;
 }
 
@@ -201,23 +214,25 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 15px;
   right: 15px;
+  transition: 350ms;
 }
 
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 70px;
   right: 15px;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
+  border-radius: 7.5px;
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 350ms;
 }
 
 .navbar-mobile a {
-  padding: 15px 20px;
+  padding: 25px 20px;
   font-size: 20px;
   color: #151515;
 }
@@ -390,6 +405,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  background: whitesmoke;
+}
+
 .services .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
@@ -1067,7 +1086,7 @@ section {
   right: 0;
   height: 40px;
   opacity: 0;
-  transition: bottom ease-in-out 0.4s;
+  transition: bottom 350ms;
   background: #03748dcc;
   display: flex;
   align-items: center;
@@ -1121,7 +1140,7 @@ section {
 .team .member:hover .social {
   bottom: 0;
   opacity: 1;
-  transition: bottom ease-in-out 0.4s;
+  transition: bottom 350ms;
 }
 
 
