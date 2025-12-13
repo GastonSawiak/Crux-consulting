@@ -1,0 +1,38 @@
+# Node / package
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build
+dist/
+build/
+
+# System
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# Logs
+logs/
+*.log
+
+# Optional: compiled python
+__pycache__/
+*.pyc
+
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+
+# LFS
+*.psd
